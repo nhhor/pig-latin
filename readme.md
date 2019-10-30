@@ -11,3 +11,4 @@
   |For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".|this|isthay|
   |If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!|quit|itquay|
   |For words beginning with "y", treat "y" as a consonant.|yellow|ellowyay|
+  |The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.| 3| 3|
