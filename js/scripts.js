@@ -31,7 +31,17 @@
       else if (firstLetter != "a" ||firstLetter !=  "e" ||firstLetter !=  "i" ||firstLetter !=  "o" ||firstLetter !=  "u") {
 
         // consonants.forEach(function(letter) {
-          if (consonants.includes(firstLetter) && consonants.includes(secondLetter) && consonants.includes(thirdLetter)) {
+          if ((firstLetter === "q") && (secondLetter === "u")) {
+            console.log("made it QU");
+            var word2 = word.split("");
+            word2.splice(word.length,2,word[0],word[1]);
+            word2.splice(0,2);
+            console.log(word2);
+            var word3 = word2.join("");
+            globalArray.push(word3+"ay");
+            console.log(word3);
+          }
+          else if (consonants.includes(firstLetter) && consonants.includes(secondLetter) && consonants.includes(thirdLetter)) {
             console.log("made it TOP");
             var word2 = word.split("");
             word2.splice(word.length,0,word[0],word[1],word[2]);
